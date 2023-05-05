@@ -1,12 +1,13 @@
 public enum Constantes {
-    C(300000000);
+    C(300000000.0);
 
-    private int con;
-    Constantes(int con){
-        this.con = con;
+    final double constants;
+    //Constructor to initialize the instance variable
+    Constantes(double constants) {
+        this.constants = constants;
     }
-    public getCon(String valor){
-        Constantes con[] = Constantes.values();
-        return con[valor];
+    public static void getConstant(int model){
+        Constantes[] constantes = Constantes.values();
+        System.out.println("Price of: "+constantes[model]+" is "+constantes[model].constants);
     }
 }
