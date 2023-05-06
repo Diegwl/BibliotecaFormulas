@@ -1,5 +1,5 @@
 public enum Constantes {
-    C(300000000.0);
+    C(300000000.0), K1(273.0),K2(9000000000.0), R(0.082);
 
     final double constants;
     //Constructor to initialize the instance variable
